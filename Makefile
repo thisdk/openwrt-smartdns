@@ -6,13 +6,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=smartdns
-PKG_VERSION:=1.2020.40
-PKG_RELEASE:=
+PKG_VERSION:=1.2020.08.27
+PKG_RELEASE:=2335
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://www.github.com/pymumu/smartdns.git
-PKG_SOURCE_VERSION:=ce46ac58a7a30e122566e75438d1ddbb0d569f9a
-# PKG_MIRROR_HASH:=d5affc45a533e38ee04f3ce47b441aecf316cb9cb68ff410eede67090ec0fcc7
+PKG_SOURCE_VERSION:=2b81fffb7eab2d96f59022961140d954be423a4f
 
 PKG_MAINTAINER:=Nick Peng <pymumu@gmail.com>
 PKG_LICENSE:=GPL-3.0-or-later
@@ -35,7 +34,7 @@ endef
 
 define Package/smartdns/description
 SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
-gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
+get DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
 Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
 endef
 
